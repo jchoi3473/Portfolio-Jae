@@ -10,6 +10,7 @@
 
   &::after {
     content: '';
+    color: black  !important;
     display: block;
     position: absolute;
     width: 0px;
@@ -19,28 +20,34 @@
     z-index: -1;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
   }
+  &:hover{
+    color: black  !important;
+
+  }
 }
 
 /* Hero Style */
 .cta-btn--hero {
   margin: 0 auto;
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background-image: linear-gradient(205deg, $primary-color 10%, $secondary-color 20%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  border-image: linear-gradient(205deg, $primary-color 10%, $secondary-color 20%);
   border-image-slice: 1;
   cursor: pointer;
   // Responsive Button hero style
   @include respond(phone) {
+    color: black  !important;
     background-image: none;
-    border: 2px solid $secondary-color;
-    -webkit-text-fill-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    -webkit-text-fill-color: rgba(255,255,255,0.5);
   }
 
   &::after {
-    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    color: black  !important;
+    background-image: linear-gradient(205deg, rgba(255,255,255,0.5), rgba(255,255,255,0.5));
     // Responsive Button hero style
     @include respond(phone) {
       background-image: none;
@@ -48,11 +55,11 @@
   }
 
   &:hover {
-    -webkit-text-fill-color: $white-color;
+    -webkit-text-fill-color: rgba(255,255,255,0.5);
     text-decoration: none;
     // Responsive Button hover hero style
     @include respond(phone) {
-      -webkit-text-fill-color: $secondary-color;
+      -webkit-text-fill-color: rgba(255,255,255,0.1);
     }
 
     &::after {
