@@ -40,7 +40,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'Chrome_extension_main.jpg',
     img2: 'Chrome_extension_main2.jpg',
-    title: 'Save Your App(SYPP) Chrome-Extension',
+    title: 'Save Your App(SYPP)       Chrome-Extension',
     info: '',
     info2: '',
     url: '',
@@ -48,10 +48,13 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'blayhome.jpg',
+    img2: 'blayImage.jpg',
+    title: 'Blay',
+    info:
+      'I am currently working in front-end development team in Blay, a start-up initiative platform. Blay aims to encourage people in initiating start-ups by providing a platform where one can share ideas and recruit members who share similar visions. It is currently an open project for everyone to join. ',
+    info2:
+      'As a frontend developer at Blay, I am in charge of creating components for its web platform. I am working on its log-in functions and its main page. I am mainly using typescript and ReactJS.',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },

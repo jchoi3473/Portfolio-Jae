@@ -26,12 +26,11 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <Container>
+      <Container className="project-container">
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, img2, id } = project;
-
             return (
               <Row key={id} className="project-row">
                 <Col lg={4} sm={12}>
@@ -101,6 +100,7 @@ const Projects = () => {
                         >
                           <div data-tilt className="thumbnail rounded">
                             <ProjectImg alt={title} filename={img} />
+                            <div className="project-imagegap" />
                             <ProjectImg alt={title} filename={img2} />
                           </div>
                         </Tilt>

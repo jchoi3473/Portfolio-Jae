@@ -3,7 +3,8 @@
   color: black;
   margin-top: -15rem;
   padding-top: 15rem;
-
+  width: 70%;
+  margin: 0 auto;
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
@@ -21,7 +22,7 @@
       padding: 20px;
       margin-bottom: 3rem;
       border-radius: 20px;
-
+      // width: 70%;
       @include respond(phone) {
         margin-bottom: 4rem;
       }
@@ -81,3 +82,11 @@
 // .project-row{
 //   background-color: rgb(224, 224, 224);
 // }
+.project-container{
+  min-width: 100% !important;
+}
+
+.project-imagegap{
+  padding: 1px;
+  background-color: transparent;
+}
