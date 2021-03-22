@@ -1,6 +1,6 @@
 #projects {
   background-color: black;
-  color: $dark-blue-text;
+  color: black;
   margin-top: -15rem;
   padding-top: 15rem;
 
@@ -11,13 +11,16 @@
 
   .project-wrapper {
     margin-bottom: 15rem;
-
+    
     @include respond(phone) {
       margin-bottom: 0rem;
     }
 
     .row {
-      margin-bottom: 8rem;
+      background-color: rgb(224, 224, 224);
+      padding: 20px;
+      margin-bottom: 3rem;
+      border-radius: 20px;
 
       @include respond(phone) {
         margin-bottom: 4rem;
@@ -35,7 +38,7 @@
       }
 
       &-title {
-        font-weight: bold;
+        font-weight: 1;
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;
 
@@ -52,7 +55,7 @@
     &__image {
       width: 70%;
       margin: 0 auto;
-
+      margin-right: 0px;
       @include respond(tab-land) {
         width: 100%;
         margin: 0;
@@ -75,3 +78,6 @@
     }
   }
 }
+// .project-row{
+//   background-color: rgb(224, 224, 224);
+// }

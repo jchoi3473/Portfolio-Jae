@@ -3,10 +3,10 @@ import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import Title from '../Title/CategoryTitle';
 import ProjectImg from '../Image/ProjectImg';
-import sypp_desktop from '../Image/SyppDesktop'
-import sypp_calendar from '../Image/SyppCalendar'
+// import syppDesktop from '../Image/SyppDesktop'
+// import syppCalendar from '../Image/SyppCalendar'
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -33,7 +33,7 @@ const Projects = () => {
             const { title, info, info2, url, repo, img, img2, id } = project;
 
             return (
-              <Row key={id}>
+              <Row key={id} className="project-row">
                 <Col lg={4} sm={12}>
                   <Fade
                     left={isDesktop}
@@ -45,29 +45,24 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
-                        <p>
-                          {info ||
-                            'Hello, everyone!'}
-                        </p>
+                        <p>{info || 'Hello, everyone!'}</p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      {url.length > 0 ?
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Prototype
-                      </a> :
-                      undefined
-                      }
-
+                      {url.length > 0 ? (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--prototype prototype-margin"
+                          href={url || '#!'}
+                        >
+                          See Prototype
+                        </a>
+                      ) : undefined}
                       {repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className="cta-btn cta-btn--prototype"
                           href={repo}
                         >
                           Source Code
@@ -106,7 +101,6 @@ const Projects = () => {
                         >
                           <div data-tilt className="thumbnail rounded">
                             <ProjectImg alt={title} filename={img} />
-                            <br></br>
                             <ProjectImg alt={title} filename={img2} />
                           </div>
                         </Tilt>
