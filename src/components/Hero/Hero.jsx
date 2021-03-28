@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 import background from '../../images/Desktop.png';
+import HeroComponent from '../HeroComponent/HeroComponent';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -54,6 +55,9 @@ const Header = () => {
                 </Link>
               </span>
             </p>
+          </Fade>
+          <Fade>
+            <HeroComponent />
           </Fade>
         </Container>
       </div>

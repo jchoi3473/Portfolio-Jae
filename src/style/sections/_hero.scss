@@ -90,11 +90,45 @@
   padding: 0 !important;
 }
 .hero-main-padding{
-  padding-top: 35.3rem;
+  padding-top: 10.0rem;
   width: 70%  !important;
 }
 .underline{
   border-top : solid 1px;
   width: 540px;
   margin: 0 auto;
+}
+.HeroComponent-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.HeroComponent-title{
+  font-size: 2.3rem; 
+}
+.HeroComponent-text{
+  font-size: 1.5rem; 
+  text-align: left;
+}
+.HeroComponent-innerComponent{
+  margin-top: 2rem;
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 320px;
+  max-height: 320px;
+  padding: 9px;
+  background-color: #e0e0e0de;
+  color: black;
+  font-size: 30px;
+  border-radius: 25px;
+  &:hover{
+    background-color: #e0e0e0fa;
+    cursor: pointer;
+  }
+}
+.hero-picture-container{
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 280px;
 }

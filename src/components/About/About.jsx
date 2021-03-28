@@ -124,13 +124,13 @@ const About = () => {
               <Col sm={9}>
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
-                    <div>
+                    <div className="skill-content-padding">
                       <li className="skill-body">Emory Univsersity</li>
                       <div className="skill-body-sub">Computer Science, B.S.</div>
                     </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="second">
-                    <div>
+                    <div className="skill-content-padding">
                       <li className="skill-body">Java</li>
                       <li className="skill-body">JavaScript</li>
                       <li className="skill-body">ReactJS</li>
@@ -140,10 +140,22 @@ const About = () => {
                     </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="third">
-                    <div>asfqwfqwf</div>
+                    <div className="skill-content-padding">
+                      <li className="skill-body">Save Your APP(SYPP) Web Application</li>
+                      <li className="skill-body">Save Your APP(SYPP) Chrome Extension</li>
+                      <li className="skill-body">BLAY</li>
+                      <li className="skill-body">Web Portfolio</li>
+                    </div>
                   </Tab.Pane>
                   <Tab.Pane eventKey="fourth">
-                    <div>asfqwfqwf</div>
+                    <div className="skill-content-padding">
+                      <li className="skill-body">Early adopter in new technologies</li>
+                      <li className="skill-body">
+                        Crazy in PC building, love to follow up with recent technologies
+                      </li>
+                      <li className="skill-body">Play web-based real-time strategy games</li>
+                      <li className="skill-body">League of Legends</li>
+                    </div>
                   </Tab.Pane>
                 </Tab.Content>
               </Col>

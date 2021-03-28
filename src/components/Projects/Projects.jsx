@@ -32,8 +32,8 @@ const Projects = () => {
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, img2, id } = project;
             return (
-              <Row key={id} className="project-row">
-                <Col lg={4} sm={12}>
+              <Row key={id} className="project-row" id={title}>
+                <Col lg={4} sm={6}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -70,7 +70,7 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={8} sm={12}>
+                <Col lg={8} sm={6}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
