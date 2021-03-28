@@ -30,10 +30,10 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, img2, id } = project;
+            const { title, info, info2, url, repo, img, id } = project;
             return (
               <Row key={id} className="project-row" id={title}>
-                <Col lg={4} sm={6}>
+                <Col lg={4} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -47,30 +47,10 @@ const Projects = () => {
                         <p>{info || 'Hello, everyone!'}</p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      {url.length > 0 ? (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn cta-btn--prototype prototype-margin"
-                          href={url || '#!'}
-                        >
-                          See Prototype
-                        </a>
-                      ) : undefined}
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn cta-btn--prototype"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={8} sm={6}>
+                <Col lg={8} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -100,11 +80,33 @@ const Projects = () => {
                         >
                           <div data-tilt className="thumbnail rounded">
                             <ProjectImg alt={title} filename={img} />
-                            <div className="project-imagegap" />
-                            <ProjectImg alt={title} filename={img2} />
+
+                            {/* <div className="project-imagegap" />
+                            <ProjectImg alt={title} filename={img2} /> */}
                           </div>
                         </Tilt>
                       </a>
+                      <br />
+                      {url.length > 0 ? (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--prototype prototype-margin"
+                          href={url || '#!'}
+                        >
+                          See Prototype
+                        </a>
+                      ) : undefined}
+                      {repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--prototype"
+                          href={repo}
+                        >
+                          Source Code
+                        </a>
+                      )}
                     </div>
                   </Fade>
                 </Col>

@@ -84,7 +84,7 @@ const HeroComponent = () => {
       <div className="HeroComponent-innerComponent">
         <Link to="JaeHoChoi.github.io" smooth duration={1000}>
           <div className="project-wrapper__text">
-            <h3 className="HeroComponent-title">JaeHoChoi.github.io</h3>
+            <h3 className="HeroComponent-title">www.JaeHoChoi0824.com</h3>
             <div className="HeroComponent-text">Personal website build using ReactJS</div>
           </div>
         </Link>

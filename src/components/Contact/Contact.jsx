@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
@@ -6,7 +6,13 @@ import Title from '../Title/Title';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contact;
+  const { cta } = contact;
+  const [buttonText, setButtonText] = useState('Email Me');
+
+  function onClickButton() {
+    navigator.clipboard.writeText('jcho427@emory.edu');
+    setButtonText('Email Copied!');
+  }
 
   return (
     <section id="contact">
@@ -17,14 +23,9 @@ const Contact = () => {
             <p className="contact-wrapper__text">
               {cta || 'Would you like to work with me? Awesome!'}
             </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--resume"
-              href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
-            >
-              {btn || "Let's Talk"}
-            </a>
+            <button type="button" className="cta-btn cta-btn--resume" onClick={onClickButton}>
+              {buttonText}
+            </button>
           </div>
         </Fade>
       </Container>

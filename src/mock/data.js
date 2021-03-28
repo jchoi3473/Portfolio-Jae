@@ -66,7 +66,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'PersonalWebsite.JPG',
     img2: 'PersonalWebsite2.JPG',
-    title: 'JaeHoChoi.github.io',
+    title: 'www.JaeHoChoi0824.com',
     info:
       'I created my personal portfolio website. In addition to function as my portfolio, this website serves as my personal playground where I can implement features I learned from the experience. This website is created using ReactJS.',
     info2:
@@ -78,9 +78,9 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
+  cta: 'Would you like to stay connected? Great!',
+  btn: 'Email Me',
+  email: 'jcho427@emory.edu',
 };
 
 // FOOTER DATA
@@ -88,23 +88,23 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/jae-ho-choi-3424a5125/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/jchoi3473',
+    },
+    {
+      id: nanoid(),
+      name: 'facebook',
+      url: 'https://www.facebook.com/jay.choi.12/',
+    },
+    {
+      id: nanoid(),
+      name: 'instagram',
+      url: 'https://www.instagram.com/jay_c824/',
     },
   ],
 };

@@ -19,6 +19,7 @@ const Footer = () => {
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
+        <p className="footer-wrapper__text">I am also active on</p>
         <div className="social-links">
           {networks &&
             networks.map((network) => {
