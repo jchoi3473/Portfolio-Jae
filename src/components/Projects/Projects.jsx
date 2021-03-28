@@ -30,10 +30,10 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, img2, id } = project;
             return (
               <Row key={id} className="project-row" id={title}>
-                <Col lg={4} sm={12}>
+                <Col lg={6} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -50,7 +50,7 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={8} sm={12}>
+                <Col lg={6} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -80,9 +80,8 @@ const Projects = () => {
                         >
                           <div data-tilt className="thumbnail rounded">
                             <ProjectImg alt={title} filename={img} />
-
-                            {/* <div className="project-imagegap" />
-                            <ProjectImg alt={title} filename={img2} /> */}
+                            <div className="project-imagegap" />
+                            <ProjectImg alt={title} filename={img2} />
                           </div>
                         </Tilt>
                       </a>

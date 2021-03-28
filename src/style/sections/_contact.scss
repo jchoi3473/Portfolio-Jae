@@ -1,11 +1,10 @@
 #contact {
   background-image: black;
-  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  padding: 15rem 0 10rem 0;
+  padding: 0;
   margin-top: -15rem;
   margin-bottom: -1px;
   color: $white-color;
+  width: 100%;
 
   @include respond(tab-land) {
     padding: 10rem 0;
@@ -33,4 +32,7 @@
       }
     }
   }
+}
+.contact-container{
+  width: 100%  !important;
 }
